@@ -6,25 +6,21 @@
 
   <div th:replace="~{fragment :: styles}"></div>
 
-  <title>NAGOYAMESHI</title>
+  <title>メール認証</title>
 </head>
 
 <body>
-  <div class="nagoyameshi-wrapper">
+  <div class="samuraitravel-wrapper">
     <div th:replace="~{fragment :: header}"></div>
 
     <main>
-      <div class="container pt-4 pb-5 nagoyameshi-container">
-        <div th:if="${param.loggedIn}" class="alert alert-info">
-          ログインしました。
-        </div>
-
-        <div th:if="${param.loggedOut}" class="alert alert-info">
-          ログアウトしました。
-        </div>
-
+      <div class="container pt-4 pb-5 samuraitravel-container">
         <div th:if="${successMessage}" class="alert alert-info">
           <span th:text="${successMessage}"></span>
+        </div>
+
+        <div th:if="${errorMessage}" class="alert alert-danger">
+          <span th:text="${errorMessage}"></span>
         </div>
       </div>
     </main>

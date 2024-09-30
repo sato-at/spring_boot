@@ -12,6 +12,10 @@ INSERT IGNORE INTO users (id, name, email, password, role_id, enabled) VALUES (1
 INSERT IGNORE INTO users (id, name, email, password, role_id, enabled) VALUES (11, '侍 秋美', 'akimi.samurai@example.com', 'password', 'ROLE_GENERAL', false);
 INSERT IGNORE INTO users (id, name, email, password, role_id, enabled) VALUES (12, '侍 信平', 'shinpei.samurai@example.com', 'password', 'ROLE_GENERAL', false);
 
+ /* adminsテーブル */
+INSERT IGNORE INTO admins (id, email, password) VALUES (1, 'admin@example.com', '$2a$10$2JNjTwZBwo7fprL2X4sv.OEKqxnVtsVQvuXDkI8xVGix.U3W5B7CO');
+INSERT IGNORE INTO admins (id, email, password) VALUES (2, 'hanako.samurai@example.com', '$2a$10$2JNjTwZBwo7fprL2X4sv.OEKqxnVtsVQvuXDkI8xVGix.U3W5B7CO');
+
 -- storesテーブル
 INSERT IGNORE INTO stores (id, name, image_name, description,start_time, end_time, price, capacity, postal_code, address, phone_number, holiday) VALUES (1, 'SAMURAIの店', 'store01.jpg', '名古屋老舗のお店。老舗の味をご堪能ください。', '10:00', '22:00', 3000, 200, '073-0145', '北海道砂川市西五条南X-XX-XX', '012-345-678', '月');
 INSERT IGNORE INTO stores (id, name, image_name, description,start_time, end_time, price, capacity, postal_code, address, phone_number, holiday) VALUES (2, '居酒屋 SAMURAI', 'store02.jpg', '名古屋老舗のお店。老舗の味をご堪能ください。', '10:00', '22:00', 2500, 30, '030-0945', '青森県青森市桜川X-XX-XX', '012-345-678', '月');

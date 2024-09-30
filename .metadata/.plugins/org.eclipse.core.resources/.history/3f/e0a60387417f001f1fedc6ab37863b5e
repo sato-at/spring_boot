@@ -9,8 +9,8 @@ spring.sql.init.mode=always
 
 spring.mail.host=sandbox.smtp.mailtrap.io
  spring.mail.port=2525
- spring.mail.username=82adce01db3880
- spring.mail.password=76821a3ac01999
+ spring.mail.username=Mailtrapに表示された「Username」
+ spring.mail.password=Mailtrapに表示された「Password」
  spring.mail.properties.mail.smtp.auth=true
  spring.mail.properties.mail.smtp.starttls.enable=true
 
